@@ -6,8 +6,9 @@
   <title>LocalStack</title>
   <link rel="icon" href="./images/favicon.svg" type="image/svg+xml">
   <!-- Bootstrap CSS -->
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./css/features.css" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar -->
@@ -41,92 +42,100 @@
       </div>
     </div>
   </nav>
-  
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Bienvenido a LocalStack</h1>
+
+    <!-- Heroe Section -->
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./images/favicon.svg" alt="" width="110" height="110">
+    <h1 class="display-5 fw-bold text-body-emphasis">Bienvenido a LocalStack</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">LocalStack es una plataforma de educación en informática, donde comparto apuntes y conocimientos adquiridos durante mi carrera en la USM. Explora recursos teóricos y prácticos para mejorar tus habilidades y profundizar en el mundo de la informática.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Comenzar</button>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Comenzar</button>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Asignaturas</button>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img src="./images/landing_image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-      </div>
-    </div>
   </div>
+
+
 
   <!-- Features Section -->
-  <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Custom cards</h2>
+ <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Temas Recomendados</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      
       <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small>3d</small>
-              </li>
-            </ul>
+        <a href="/asignatura/estructuras-datos" class="text-decoration-none">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-hover" style="background-image: url('./images/estructuras_datos.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-border">Estructuras de Datos</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./images/git_user.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>V1centeJ1menez</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small></small>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
-        </div>
+      
+<div class="col">
+  <a href="/asignatura/lenguajes-programacion" class="text-decoration-none">
+    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-hover" style="background-image: url('./images/Lp.jpg');">
+      <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+        <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-border">Lenguajes de Programación</h3>
+        <ul class="d-flex list-unstyled mt-auto">
+          <li class="me-auto">
+            <img src="./images/git_user.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+          </li>
+          <li class="d-flex align-items-center me-3">
+            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+            <small>V1centeJ1menez</small>
+          </li>
+          <li class="d-flex align-items-center">
+            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+            <small></small>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
+  </a>
+</div>
+
+      <div class="col">
+        <a href="/asignatura/base-datos" class="text-decoration-none">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-hover" style="background-image: url('./images/Bd.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-border">Base de Datos</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="./images/git_user.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                  <small>V1centeJ1menez</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                  <small></small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+</div>
 
   <!-- Footer -->
   <div class="container">
@@ -139,7 +148,7 @@
 
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-        <li class="nav-item"><a href="https://github.com/V1centeJ1menez/estructuras-datos-educacional" class="nav-link px-2 text-body-secondary">Repositorio</a></li>
+        <li class="nav-item"><a href="https://github.com/V1centeJ1menez/LocalStack" class="nav-link px-2 text-body-secondary">Repositorio</a></li>
       </ul>
     </footer>
   </div>

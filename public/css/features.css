@@ -1,0 +1,65 @@
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .75rem;
+  }
+  
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: .75rem;
+  }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  
+  .feature-icon-small {
+    width: 3rem;
+    height: 3rem;
+  }
+
+/* Estilo para la animación */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-10px); /* Elevar la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    cursor: pointer; /* Indica que es clickeable */
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; /* Asegura que el texto esté centrado */
+    overflow: hidden; /* Evita desbordes visibles */
+  }
+  
+  .card .h3 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem); /* Tamaño adaptativo */
+    white-space: normal; /* Permite saltos de línea */
+    overflow-wrap: anywhere; /* Rompe palabras largas si es necesario */
+    word-break: break-word; /* Rompe líneas cuando sea necesario */
+    hyphens: auto; /* Agrega guiones automáticamente si es necesario */
+    margin: 0;
+    line-height: 1.4; /* Mejora la legibilidad */
+  }
+  
+  .card p {
+    font-size: 0.9rem; /* Ajusta el tamaño de fuente */
+    white-space: normal; /* Evita cortes innecesarios */
+    overflow-wrap: break-word; /* Rompe palabras largas */
+    text-align: left; /* Centra el texto */
+    line-height: 1.4;
+  }
+  
+  
